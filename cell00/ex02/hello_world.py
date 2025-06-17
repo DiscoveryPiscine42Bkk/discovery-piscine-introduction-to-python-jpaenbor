@@ -1,1 +1,1 @@
-print("hello_wold")
+print("hello_wold");
