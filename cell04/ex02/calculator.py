@@ -1,13 +1,16 @@
 num1 = int(input("Give me the first number: "))
 num2 = int(input("Give me the second number: "))
-print('Thank You')
 
-print(f"{num1} + {num2} = {num1 + num2}")
-print(f"{num1} - {num2} = {num1 - num2}")
-div = num1 / num2
-if div == int(div):
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
 
-    print(f"{num1} / {num2} = {int(num1 * num2)}")
+if num2 != 0:
+    division = num1 / num2
 else:
-    print(f"{num1} / {num2} = {div}")
+    division = "undefined (cannot divide by zero)"
+    
+    print(f"{num1} + {num2} = {num1 + num2}")
+    print(f"{num1} - {num2} = {num1 - num2}")
     print(f"{num1} * {num2} = {num1 * num2}")
+    print(f"{num1} / {num2} = {div}")
